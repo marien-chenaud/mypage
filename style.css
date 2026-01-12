@@ -3,12 +3,14 @@
   --text: #1a1a1a;
   --muted: #6b6b6b;
 
-  --burgundy-dark: #4b1f2a;
-  --burgundy: #6d2c3a;
-  --burgundy-light: #f4ecee;
+  --burgundy-dark: #4b1f2a;   /* headings and hover */
+  --burgundy: #6d2c3a;        /* accents and markers */
+  --burgundy-light: #f1dede;  /* header background */
+  --burgundy-lighter: #f9e8e8; /* optional for section shading */
 
   --max-width: 760px;
 }
+
 
 * {
   box-sizing: border-box;
@@ -33,9 +35,11 @@ body {
 /* Header */
 
 header {
-  background: var(--burgundy-light);
-  border-bottom: 1px solid rgba(75, 31, 42, 0.25);
+  background: var(--burgundy-light);        /* darker, visible shade */
+  border-bottom: 2px solid var(--burgundy); /* slightly stronger line */
+  padding: 2rem 0;
 }
+
 
 .header {
   display: flex;
@@ -95,9 +99,12 @@ a:hover {
 
 section {
   margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(75, 31, 42, 0.2);
+  padding: 2rem;
+  border-top: 2px solid var(--burgundy-light);
+  background: var(--burgundy-lighter);
+  border-radius: 4px;  /* optional, soft corners */
 }
+
 
 h2 {
   font-size: 1.3rem;
@@ -109,11 +116,12 @@ h2 {
 h2::before {
   content: "";
   display: block;
-  width: 2.5rem;
-  height: 3px;
-  background: var(--burgundy);
+  width: 3rem;                  /* longer line */
+  height: 4px;                  /* thicker */
+  background: var(--burgundy-dark);
   margin-bottom: 0.75rem;
 }
+
 
 /* Lists */
 
