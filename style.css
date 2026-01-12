@@ -1,8 +1,12 @@
 :root {
   --bg: #ffffff;
-  --text: #111111;
-  --muted: #666666;
-  --accent: #0a58ca;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+
+  --burgundy-dark: #4b1f2a;
+  --burgundy: #6d2c3a;
+  --burgundy-light: #f4ecee;
+
   --max-width: 760px;
 }
 
@@ -18,19 +22,29 @@ body {
   line-height: 1.6;
 }
 
+/* Layout */
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2rem 1.25rem;
 }
 
+/* Header */
 
+header {
+  background: var(--burgundy-light);
+  border-bottom: 1px solid rgba(75, 31, 42, 0.25);
+}
 
-nav a {
-  margin-left: 1.5rem;
-  font-size: 0.95rem;header {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header .title {
+  margin-right: auto;
 }
 
 h1 {
@@ -39,27 +53,69 @@ h1 {
 }
 
 .subtitle {
-  color: var(--muted);
   margin-top: 0.5rem;
+  color: var(--muted);
 }
 
-h2 {
-  margin-top: 2.5rem;
-  font-size: 1.3rem;
+/* Navigation */
+
+nav {
+  display: flex;
+  gap: 2.5rem;
 }
+
+nav a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--burgundy-dark);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: var(--burgundy);
+}
+
+/* Typography */
 
 p {
   margin: 0.75rem 0;
 }
 
 a {
-  color: var(--accent);
+  color: var(--burgundy);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+/* Sections */
+
+section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(75, 31, 42, 0.2);
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--burgundy-dark);
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  background: var(--burgundy);
+  margin-bottom: 0.75rem;
+}
+
+/* Lists */
 
 .list {
   list-style: none;
@@ -73,39 +129,17 @@ a:hover {
 
 .list span {
   display: block;
-  color: var(--muted);
   font-size: 0.95rem;
+  color: var(--muted);
 }
+
+/* Footer */
 
 .footer {
-  padding-top: 3rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
-  color: var(--muted);
+  border-top: 1px solid rgba(75, 31, 42, 0.25);
   font-size: 0.9rem;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header .title {
-  margin-right: auto;
-}
-
-nav {
-  display: flex;
-  gap: 2.5rem; /* increase spacing here */
-}
-
-nav a {
-  font-size: 0.95rem;
-  color: var(--text);
-  white-space: nowrap;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
+  color: var(--muted);
 }
