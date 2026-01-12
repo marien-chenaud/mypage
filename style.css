@@ -79,3 +79,19 @@ a:hover {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
