@@ -6,4 +6,4 @@ marien.chenaud@centralesupelec.fr
 
 ## License
 
-All rights reserved. Do not distribute without prior written authorizatiosn.
+All rights reserved. Do not distribute without prior written authorization.
