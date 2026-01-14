@@ -50,10 +50,11 @@ header {
 
 .header .title {
   margin-right: auto;
+
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -170,4 +171,19 @@ h2::before {
 .pdf-link:hover {
   background-color: var(--burgundy-dark);
 }
+
+.profile-photo {
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  /*filter: grayscale(20%);*/
+}
+
 
