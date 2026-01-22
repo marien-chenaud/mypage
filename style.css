@@ -67,7 +67,7 @@ h1 {
 
 nav {
   display: flex;
-  gap: 2rem;                        /* more breathing room between links */
+  gap: 2rem;                       
 }
 
 nav a {
@@ -78,7 +78,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--burgundy);           /* subtle hover accent */
+  color: var(--burgundy-dark);           /* subtle hover accent */
 }
 
 
@@ -96,7 +96,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px solid var(--burgundy);
+  border-bottom: 1px solid var(--burgundy-dark);
 }
 
 
@@ -105,7 +105,7 @@ a:hover {
 section {
   padding-top: 2rem;
   margin-top: 3rem;
-  border-top: 1px solid rgba(75, 31, 42, 0.15); /* very subtle separator */
+  border-top: 1px solid rgba(75, 31, 42, 0.25); /* very subtle separator */
   background: transparent;           /* no colored boxes */
 }
 
