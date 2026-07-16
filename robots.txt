@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marien-chenaud.github.io/mypage/sitemap.xml

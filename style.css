@@ -186,4 +186,27 @@ h2::before {
   /*filter: grayscale(20%);*/
 }
 
+/* Project entries */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links {
+  margin-top: 0.5rem;
+}
+
 
